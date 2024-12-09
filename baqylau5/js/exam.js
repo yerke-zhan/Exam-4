@@ -1,41 +1,45 @@
- 
- function calculator(kosu, azaytu, kobeytu, bolu) {
 
-//  kosu = a+b;
-//  azaytu =a-b;
-//  kobeytu =a*b;
-//  bolu = a/b;
+function calculator(kosu,azaytu, kobeytu,bolu ) {
 
     let num1 = +prompt("Enter first number")
     let num2 = +prompt("Enter second number")
 
+    
     if (num1 <0|| num2<0 || num1=="" || num2 == ""){
         alert ("Қате енгізу!")
-    } else if ( kosu)
-        return num1+num2
-    else if ( azaytu)
-        return num1-num2
-    else if ( kobeytu)
-        return num1 *num2
-    else if ( bolu)
-        return num1/num2
-
- alert("Қосындысы:"+ kosu + "Азайтындысы:" +azaytu + "Көбейтінді:" + kobeytu + "Бөлінді:"+ bolu);
+    
     }
-
-    function kosu ()
-    return
+    
+    }
+ 
+    function kosu (num1 ,num2){
+        return num1+num2
+    }
+    function azaytu(num1 ,num2){
+        return num1-num2
+    }
+    function kobeytu (num1 ,num2){
+            return num1*num2
+    }
+    function bolu(num1 ,num2){
+            return num1/num2
+    }
     
 
+    alert("Қосындысы:"+ kosu(num1,num2) + "Азайтындысы:" +azaytu (num1,num2)+ "Көбейтінді:" + kobeytu (num1,num2)+ "Бөлінді:"+ bolu(num1,num2));
+    
+
+    
 calculator( )
 
 // function market(){
 //     i =1;
     
     
+    
 
-//     let shygynSany = +prompt(i + "Қанша зат аласыз?") 
-//     let num = +prompt(i + "Сумма?") 
+//     let shygynSany = +prompt(i + ".Қанша зат аласыз?") 
+//     let num = +prompt(i + ".Сумма?") 
 
 //     if (num>=5000 && num <=10000 ){
 //         return num - (num*0,1)
@@ -52,7 +56,7 @@ calculator( )
 //     if (num>=20000){
 //         return num - (num*0,3)
 
-//         alert( total+ "Сізге 30% жеңілдік қарастырылды")
+//         alert( + "Сізге 30% жеңілдік қарастырылды")
     
 //     }
 //         i++;
@@ -60,16 +64,16 @@ calculator( )
 
 // market()
 
-function changeNumber (){
+// function changeNumber (){
 
-let num1 =+ prompt(" Enter first number")
-let num2 =+ prompt(" Enter second number")
+// let num1 =+ prompt(" Enter first number")
+// let num2 =+ prompt(" Enter second number")
 
-console.log (num1, num2)
-console.log (num2, num1)
+// console.log (num1, num2)
+// console.log (num2, num1)
 
-}
-changeNumber()
+// }
+// changeNumber()
 
 
 
